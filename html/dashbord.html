@@ -1,0 +1,164 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link  href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <title>nati car sell</title>
+<body>
+   <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1 style="color: black">nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+
+<nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="home.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">RENTAL</a></li> 
+                 <li><a href="addcar.html">ADD CAR</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#"><span class="glyphicon glyphicon-user">PROFILE<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="dashbord.html">Dashboard</a></li>
+                          <li><a href="../php/logout.php">Log out</a></li>
+                        </ul>
+                 </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">   
+    <div class="container" >
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Profile</a></li>
+    <li><a data-toggle="tab" href="#menu1">update</a></li>
+    <li><a data-toggle="tab" href="#menu2">Mycar</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div id="profil">
+        
+      </div>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>update profile</h3>
+
+      <form class="form-horizontal" action="../php/server.php" method="POST">
+        <div class="form-group">
+      <label class="control-label col-sm-2" for="name">User Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="name">TelPhone:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="telphone" placeholder="Enter TelPhone Number" name="telphone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" name="update" >SAVE</button>
+      </div>
+    </div>
+  </form>
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <div id="mycars" class="container-fluid">
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+           
+    <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Cars</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                 <li><a href="html/contactus.html" target="_blank">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+    <script type="text/javascript" src="../js/load.js"></script>
+ <script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+ 
+    
+</html>

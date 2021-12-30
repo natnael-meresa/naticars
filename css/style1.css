@@ -1,0 +1,202 @@
+            /* top head start */
+
+
+            /* top head end */
+            .imgGallary{
+                    width: 100%;
+                  }
+            .carousel-inner > .item > img,
+                  .carousel-inner > .item > a > img {
+                      width: 70%;
+                      float: left;
+                      margin: auto;
+                      height: 200px;
+                  }
+                    a.sidebar-innerlink{
+                    text-decoration: none;
+                    color: gray;
+                    text-align: right;
+                    padding-left: 0px;
+                  }
+                  a.sidebar-innerlink:hover{
+                    color:blue;
+                  }
+                  a.text-none{
+                    text-decoration: none;
+                  }
+                  .listgroup-panel div button{
+                    text-align: left;
+                    padding-left: 30px;
+                  }
+                  .listgroup-panel{
+                    padding: 0px;
+                  }
+                  #navPanel div{
+                    padding: 0px;
+                  }
+                      #galleryimg div img{
+                      width: 400px;
+                      height: 150px;
+                    }
+                  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+                  .affix {
+                      top: 0;
+                      width: 100%;
+                      z-index: 9999 !important;
+                  }
+
+                  .affix + .container-fluid {
+                      padding-top: 70px;
+                  }
+                  #mainnav{
+                    border-radius: 0;
+                  }
+                  #tophead {
+                    background-image: url("backvec.jpg");
+                    background-size: cover;
+                    text:black;
+                    position: relative;
+                     height: 50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding-top:30px;
+                    padding-left: 50px;
+                  }
+                  #tophead h1,img{
+                    float: left;
+                  }
+                  #tophead img{
+                    padding-top:40px;
+                  }
+                  
+
+                  /* Remove the navbar's default margin-bottom and rounded borders */ 
+                    .navbar {
+                      margin-bottom: 0;
+                      border-radius: 0;
+                    }
+                    
+                    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+                    .row.content {
+                        height: 100%;
+                    }
+                    
+                    /* Set gray background color and 100% height */
+                    .sidenav {
+                      padding-top: 20px;
+                      background-color: white;
+                      height: 100%;
+                    }
+                    
+                    
+                   
+
+                     @media screen and(min-width: 769px){
+                        .sidenav{
+                            height:height: 100%;;
+                        }
+                    }
+                    /* On small screens, set height to 'auto' for sidenav and grid */
+                    @media screen and (max-width: 767px) {
+                      .sidenav {
+                        height: auto;
+                        padding: 15px;
+                      }
+                      .row.content {height:auto;} 
+                    }
+                    /* The popup form - hidden by default */
+                    .form-popup {
+                      display: none;
+                      position: fixed;
+                      bottom: 0;
+                      right: 15px;
+                      border: 3px solid #f1f1f1;
+                      z-index: 9;
+                    }
+
+                    /* Add styles to the form container */
+                    .form-container {
+                      max-width: 300px;
+                      padding: 10px;
+                      background-color: white;
+                    }
+
+                    /* Full-width input fields */
+                    .form-container input[type=text], .form-container input[type=password] {
+                      width: 100%;
+                      padding: 15px;
+                      margin: 5px 0 22px 0;
+                      border: none;
+                      background: #f1f1f1;
+                    }
+
+                    /* When the inputs get focus, do something */
+                    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                      background-color: #ddd;
+                      outline: none;
+                    }
+
+                    /* Set a style for the submit/login button */
+                    .form-container .btn {
+                      background-color: #4CAF50;
+                      color: white;
+                      padding: 16px 20px;
+                      border: none;
+                      cursor: pointer;
+                      width: 100%;
+                      margin-bottom:10px;
+                      opacity: 0.8;
+                    }
+
+                    /* Add a red background color to the cancel button */
+                    .form-container .cancel {
+                      background-color: red;
+                    }
+
+                    /* Add some hover effects to buttons */
+                    .form-container .btn:hover, .open-button:hover {
+                      opacity: 1;
+                    }
+
+                    /* footer styles */
+
+                    
+                    ul.footer-links-u {
+                            padding-left:0px;
+                          }
+                          .footer-links ul li{
+                            text-align:left;
+                            list-style-type:none;
+                          }
+                          .bg-1{
+                            background-color: #2f2f2f; /* Black Gray */
+                        color: #fff;
+                          }
+                          .vl {
+                        border-left: 6px solid green;
+                        height: 50px;
+                        float:left;
+                    }
+                          .hl{
+                              border-bottom:2px solid gray;
+                              width:100%;
+                          }
+                          .hl-h{
+                              border-bottom:2px solid green;
+                              width:100%;
+                          }
+                      .copyright{
+                          width: 100%;
+                          background-color:black;
+                          text-align:center;
+                          padding-top:30px;
+                          padding-bottom:30px;
+                          margin-bottom: 0px;
+                      }
+                      .footer-links .footer-links-ul{
+                        padding-left:0px;
+                      }
+
+                    /* footer styles end*/
+
+

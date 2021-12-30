@@ -1,0 +1,209 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link  href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css"></head>
+
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1>nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+        <nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="../index.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">BORROW</a></li> 
+                 <li><a href="addcar.html">ADD CAR</a></li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="html/signup.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+<li><a href="javascript:openForm()" class="open-button"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+                <div class="form-popup" id="myForm">
+                  <form action="https://www.w3schools.com/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a>forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+
+                <div class="form-popup" id="myForm">
+                  <form action="https://www.w3schools.com/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a>forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">5</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+         
+    <div class="container" >
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Profile</a></li>
+    <li><a data-toggle="tab" href="#menu1">update</a></li>
+    
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="container-fluid" style="padding-top:30px; padding-left:20%;">
+        <div class="row" style="padding-left: 15%;">
+        <figure>
+        <img src="image/avatar.png" style="border-radius: 50%; width: 200px;">
+        </figure>
+        </div>
+        <div class="row" style="max-width: 500px;">
+             <div class="panel panel-default">
+                <div class="panel-heading">profile </div>
+                <div class="panel-body">User:  <span style="padding-left: 10px;">Amir Ashenafi</span></div>
+                <div class="panel-body">Email:  <span style="padding-left: 10px;">amir@gmail.com</span></div>
+                <div class="panel-body">Joined: <span style="padding-left: 10px;">10.4.1999</span></div>
+                <div class="panel-body">Last Seen: <span style="padding-left: 10px;">2day ago</span></div>
+              </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>update profile</h3>
+
+      <form class="form-horizontal" action="">
+        <div class="form-group">
+      <label class="control-label col-sm-2" for="name">User Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="name">TelPhone:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="telphone" placeholder="Enter TelPhone Number" name="telphone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">SAVE</button>
+      </div>
+    </div>
+  </form>
+
+    </div>
+  </div>
+</div>
+    </div>
+
+            <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Prodacts</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                  <li><a href="#">Enquiry</a></li>
+                  <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Our Newsletter</h4>
+               <p class="hl-h"></p>
+               <h4>Subscribe to our newsletter</h4>
+               <form class="form-inline">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

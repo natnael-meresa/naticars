@@ -1,0 +1,314 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link  href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/addcar.css">
+</head>
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1>nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+
+
+        <nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="../index.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">BORROW</a></li> 
+                 <li><a href="addcar.html">ADD CAR</a></li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+
+                 <li><a href="javascript:openForm()" class="open-button"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+                <div class="form-popup" id="myForm">
+                  <form action="https://www.w3schools.com/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a>forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+
+                <div class="form-popup" id="myForm">
+                  <form action="https://www.w3schools.com/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a>forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">5</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <form id="regForm">
+          <h1>Please Fill The Following Fields</h1>
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab">Car Information:
+            <div class="form-group">
+              <label for="sel1">Select Brand:</label>
+              <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+          </div>
+              <div class="form-group">
+              <label for="selectmodel">Select Model:</label>
+              <select class="form-control" id="selectmodel" name="selectmodel">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bodyType">Body type:</label>
+              <select class="form-control" id="bodyType" class="transmisson">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>  
+            <div class="form-group">
+              <label for="condation">Condtion:</label>
+              <select class="form-control" id="condation" name="transmisson">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="sel1">Year of make:</label>
+              <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="transmisson">Transmisson:</label>
+              <select class="form-control" id="transmisson" name="transmisson">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="enginesize">Engine Size:</label>
+              <select class="form-control" id="enginesize" name="enginesize">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="enginetype">Engine Type:</label>
+              <select class="form-control" id="enginetype" name="enginetype">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="whatdo">What Do:</label>
+              <select class="form-control" id="whatdo" name="whatdo">
+                <option>Sell</option>
+                <option>Rent</option>
+              </select>
+            </div> 
+             <div class="form-group">
+              <label for="whatdo">Enter Image of car:</label>
+              <input type="file" name="fileupload" >
+            </div>
+            <div class="form-group">
+              <label for="price">Price:</label>
+              <input type="text" name="price">
+            </div> 
+
+          </div>
+          <div class="tab">
+            <div class="container-fluid">
+              <div class="text-center">
+                <h4>How long do you want the car to stay in display</h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>30 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$10</h3>
+                      <label class="container">
+                          <input type="radio" name="price" value="basic">
+                       </label>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>60 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$50</h3>
+                      <label class="container">
+                          <input type="radio" name="price" value="pro">
+                       </label>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>90 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$100</h3>
+                      <label class="container">
+                          <input type="radio" name="price" value="prem">
+                       </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="tab">
+
+            <h1>done</h1>
+            </div>
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </form>
+    </div>
+
+
+
+      <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Prodacts</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                  <li><a href="#">Enquiry</a></li>
+                  <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Our Newsletter</h4>
+               <p class="hl-h"></p>
+               <h4>Subscribe to our newsletter</h4>
+               <form class="form-inline">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+    <script src="../js/addcar.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
+
+
+

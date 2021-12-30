@@ -1,0 +1,12 @@
+$.ajax(
+{
+  type:"GET",
+  url:"../search.php",
+  data:{'color','black'},
+  success:function(msg){
+    $('#gallery').innerHTML=msg;
+  },
+  error:function(msg){
+    alert("error");
+  }
+});

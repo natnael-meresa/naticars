@@ -1,0 +1,44 @@
+.Regcontainer {
+	margin:auto;
+	max-width:50%;
+    padding: 16px;
+    background-color: white;
+}
+.Regcontainer input[type=text], .Regcontainer input[type=password] ,.Regcontainer input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+}
+.Regcontainer input[type=text]:focus, .Regcontainer input[type=password]:focus ,.Regcontainer input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}

@@ -1,0 +1,237 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link  href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/addcar.css">
+    <title>nati car sell</title>
+</head>
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1>nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+
+
+       <nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="home.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">RENTAL</a></li> 
+                 <li><a href="addcar.html">ADD CAR</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#"><span class="glyphicon glyphicon-user">PROFILE<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="dashbord.html">Dashboard</a></li>
+                          <li><a href="../php/logout.php">Log out</a></li>
+                        </ul>
+                 </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <form id="regForm" action="../php/car.php" method="POST" enctype="multipart/form-data" >
+          <h1>Please Fill The Following Fields</h1>
+          
+          
+     Car Information:
+            <div class="form-group">
+              <label for="sel1">MODEL:</label>
+              <input type="text" list="sel1" name="brand">
+              <datalist name ="brand" id="sel1">
+                <option value="BMW">
+                <option value="Chev">
+                <option value="Ford">
+                <option value="Honda">
+                <option value="Hummer">
+                <option value="Jeep">
+                <option value="Jaguar">
+                <option value="Land Rover">
+                <option  value="Mercedes">
+                <option value="Nissan">
+                <option value="Toyota">
+                <option value="volvo">
+              </datalist>
+          </div>
+              
+            
+            <div class="form-group">
+              <label for="color">Color:</label>
+              <input type="text" name="color">
+            </div> 
+            <div class="form-group">
+              <label for="condation">Condtion:</label>
+              <select class="form-control" id="condation" name="condation">
+                <option>Brand New</option>
+                <option>Used</option>
+              </select>
+            </div> 
+             
+             
+            <div class="form-group">
+              <label for="enginesize">Engine Capacity:</label>
+              <select class="form-control" id="enginesize" name="enginesize">
+                <option>1000</option>
+                <option>1300</option>
+                <option>1600</option>
+                <option>2000</option>
+                <option>2500</option>
+                <option>3000</option>
+                <option>3500</option>
+                <option>800</option>
+              </select>
+            </div> 
+           
+            <div class="form-group">
+              <label for="whatdo">What to Do:</label>
+              <select class="form-control" id="whatdo" name="whatdo">
+                <option>Sell</option>
+                <option>Rent</option>
+              </select>
+            </div> 
+            
+             <div class="form-group">
+              <label for="whatdo">Enter Image of car:</label>
+              <input type="file" name="image" id="image" >
+            </div>
+            <div class="form-group">
+              <label for="price">Price:</label>
+              <input type="text" name="price">
+            </div> 
+
+          
+    
+            <div class="container-fluid">
+              <div class="text-center">
+                <h4>How long do you want the car to stay in display</h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>30 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$10</h3>
+                      <label class="container">
+                          <input type="radio" name="day" value="30">
+                       </label>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>60 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$50</h3>
+                      <label class="container">
+                          <input type="radio" name="day" value="60">
+                       </label>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                      <h1>90 days</h1>
+                    </div>
+                    <div class="panel-footer">
+                      <h3>$100</h3>
+                      <label class="container">
+                          <input type="radio" name="day" value="90">
+                       </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+             <button name="entercar" id="entercar">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+      <
+    <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Cars</a></li>
+                <p class="hl"></p>
+                 <li><a href="html/contactus.html" target="_blank">Contact us</a></li>
+                 <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+    <script src="../js/addcar.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
+
+
+

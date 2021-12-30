@@ -1,0 +1,161 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link  href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/reg.css">
+
+
+</head>
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1 style="color: black">nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+    </div>
+        <nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="../index.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">RENTAL</a></li>
+                
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+
+                 <li><a href="javascript:openForm()" class="open-button"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+                <div class="form-popup" id="myForm">
+                  <form action="../php/server.php" method="post" class="form-container">
+                    <h1>Login</h1>
+
+                      <label for="username"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit" name="login" class="btn">Login</button>
+                    <a href="#">forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+<form action="../php/server.php" method="post" name="myForm" >
+  <div class="container Regcontainer">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <p id="demo1" ></p>
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+    <p id="demo2" ></p>
+    <label for="name"><b>TelPhone</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="telphone" required>
+    <p id="demo3" ></p>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <p id="demo4" ></p>
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p id="demo5" ></p>
+    <button type="submit" class="registerbtn" name="register" >Register</button>
+  </div>
+
+  <div class="container signin Regcontainer">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+
+     <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Prodacts</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                  <li><a href="#">Enquiry</a></li>
+                  <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Our Newsletter</h4>
+               <p class="hl-h"></p>
+               <h4>Subscribe to our newsletter</h4>
+               <form class="form-inline">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+
+    <script type="text/javascript" src="../js/val.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+</html>

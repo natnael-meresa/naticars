@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link  href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">"
+
+    <title>Document</title>
+</head>
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1 style="color: black">nati cars</h1>
+        <img src="image/logo.svg">
+    </div>
+
+<nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="home.html" class="navbar-brand">nati cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">Rental</a></li> 
+                 <li><a href="#" id="addcar" >ADD CAR </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#"><span class="glyphicon glyphicon-user">Profile<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="dashbord.html">Dashboard</a></li>
+                          <li><a href="../php/logout.php">Log out</a></li>
+                        </ul>
+                 </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+  <div class="container-fluid text-center">
+  <div class="row content">
+
+
+        <div class="col-sm-3 sidenav" >
+      <div class="panel-group">
+
+     <div class="panel panel-default" id="navPanel">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+          <a  style="text-decoration:none;" data-toggle="collapse" href="#collapse1"><button class="btn btn-default btn-group-justified" style="text-align: left;">Advanced Search</button></a>
+        </h4>
+        </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <ul class="list-group" style="padding: 0px">
+          <li class="list-group-item listgroup-panel" >
+                <div class="panel panel-default">              
+                   <a data-toggle="collapse" href="#collapse2" class="text-none">
+                   <button class="btn  btn-default btn-group-justified" >MODEL</button>
+                  </a>
+                  <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3 style="display: inline; font-size: 15px; text-align: left;">SELECT MODEL</h3>
+                     <select class="form-control " id="sel1">
+                      <option>Ford</option>
+                      <option>Nissan</option>
+                      <option>Jeep</option>
+                      <option>Bmw</option>
+                      <option>Fiat</option>
+                      <option>Honda</option>
+                      <option>Lifan</option>
+                      <option>Kia</option>
+                      <option>Jaguar</option>
+                      <option>Audi</option>
+                      <option>Opel</option>
+                      <option>Merceds</option>
+                      <option>Lexus</option>
+                      <option>LandRover</option>
+                    </select>
+                  </div>
+                  </div>
+                </div>
+
+          </li>
+          <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse3" class="text-none">
+                   <button class="btn  btn-default btn-group-justified" >BY KEYWORD</button>
+                  </a>
+                  <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <form>
+                      <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" name="search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                  </div>
+                </div>
+          </li>
+          <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse4" class="text-none">
+                   <button class="btn  btn-default btn-group-justified" >COLOR</button>
+                  </a>
+                  <div id="collapse4" class="panel-collapse collapse">
+
+                  <div class="panel-body "style="padding-left: 50px; text-align: left;"><a href="javascript:showcar('color','black')" class="sidebar-innerlink">Black</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#"class="sidebar-innerlink">
+                  Blue</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  white</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  Gold</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  Red</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Silver</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  White</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Orange</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Bronze</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  Brown</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  Grean</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">
+                  gray</a></div>
+
+                  </div>
+                </div>
+          </li>
+           <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse5" class="text-none">
+                   <button class="btn  btn-default btn-group-justified" >CONDITION</button>
+                  </a>
+                  <div id="collapse5" class="panel-collapse collapse">
+                   <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Brand New</a></div>
+                    <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">USED</a></div>
+                  </div>
+                </div>
+          </li>
+           <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse6" class="text-none"> 
+                   <button class="btn  btn-default btn-group-justified" >FUEL TYPE</button>
+                  </a>
+                  <div id="collapse6" class="panel-collapse collapse">
+
+
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Benzine</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Diesel</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">Hybrid</a></div>
+                  </div>
+                </div>
+          </li>
+           <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse7" class="text-none">
+                   <button class="btn  btn-default btn-group-justified" >PRICE</button>
+                  </a>
+                  <div id="collapse7" class="panel-collapse collapse">
+                  <div class="panel-body">Panel Body</div>
+                  </div>
+                </div>
+          </li>
+               <li class="list-group-item listgroup-panel">
+            <div class="panel panel-default">             
+                   <a data-toggle="collapse" href="#collapse8" class="text-none"> 
+                   <button class="btn  btn-default btn-group-justified" >Engine Capacity</button>
+                  </a>
+                  <div id="collapse8" class="panel-collapse collapse">
+
+
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">3500cc</a></div>
+                  <div class="panel-body" style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">3000cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">2500cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">2000cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">1600cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">1300cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">1000cc</a></div>
+                   <div class="panel-body " style="padding-left: 50px; text-align: left;"><a href="#" class="sidebar-innerlink">800cc</a></div>
+                  </div>
+                </div>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+    <div class="panel panel-default" id="navPanel">
+        <div class="panel-heading" style="padding-left: 10px; text-align: left;">Popular Model</div>
+        <a href="#" style="display: block; padding: 2px 1px 1px 16px; text-decoration: none; text-align: left;">Ford</a>
+        <a href="#" style="display: block; padding: 2px 1px 1px 16px; text-decoration: none; text-align: left;">Honda</a>
+        <a href="#" style="display: block; padding: 2px 1px 1px 16px; text-decoration: none; text-align: left;">Bmw</a>
+        <a href="#" style="display: block; padding: 2px 1px 1px 16px; text-decoration: none; text-align: left;">Ferai</a>
+    </div>
+  </div>
+    </div>
+
+
+    <div class="col-sm-9 text-left" style="background-color:lavender;">
+
+      <h3 style="margin-top:0px; padding-left: 50px;">Sponsered</h3>
+
+             <div class="container-fluid">
+  <br>
+  <!-- Left and right controls -->
+    
+    <a class="left " href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="right" href="#myCarousel" role="button" data-slide="next" style="float:right;">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="../image/med.jpg" alt="mde" >
+        <div style="width: 30%; float: right;">
+          <h3>Toyota picup</h3>
+          <p>you will love it</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../image/med.jpg" alt="pickup" >
+        <div style="width: 30%; float: right;">
+          <h3>medium Pickup</h3>
+          <p>medim pickup are realy good for contry side</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="../image/corolla.jpg" alt="corolla" >
+        <div style="width: 30%; float: right;">
+          <h3>Corolla</h3>
+          <p>Corola is is good </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../image/toyota.jpg" alt="toyota" >
+        <div style="width: 30%; float: right;">
+          <h3>TOYOTA</h3>
+          <p>toyota is the best for you if you are....</p>
+        </div>
+      </div>
+  
+    </div>
+
+
+  </div>
+  
+</div>
+
+        <hr/>
+      <!-- strat of gallery--> 
+      <div class="container-fluid" id="gallery">
+
+      
+      </div>
+    <!--end 0f gallery-->   
+    </div>
+
+    
+  </div>
+</div>
+ </main>
+
+
+    <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Prodacts</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                  <li><a href="#">Enquiry</a></li>
+                  <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Our Newsletter</h4>
+               <p class="hl-h"></p>
+               <h4>Subscribe to our newsletter</h4>
+               <form class="form-inline">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+
+    </footer>
+   
+</body>
+<script type="text/javascript">
+  $('#gallery').load('php/gallery.php');
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
+
+</html>

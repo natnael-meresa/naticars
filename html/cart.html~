@@ -1,0 +1,163 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link  href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="all">
+    <link  href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <script src="../jquery/jQuery.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <style type="text/css">
+        hr{
+            border-color: black;
+        }
+        ul{
+            list-style-type: none;
+            text-align: left;
+        }
+        ul .cartspan{
+            text-align: right;
+        }
+        .cartspan{
+            padding-left: 60%;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id = "tophead" class="container-fluid" style="background-color:#b3b3ff;color:#fff;height:200px;">
+        <h1>nati cars</h1>
+        <img src="../image/logo.svg">
+    </div>
+        <nav id ="mainnav" class="navbar  navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #000033">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="../index.html" class="navbar-brand">nat cars</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="dropdown" >
+                        <a  data-toggle="dropdown" class="dropdown-toggle"  href="#">BUY<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Brand new</a></li>
+                          <li><a href="#">Used</a></li>
+                        </ul>
+                 </li>
+                 <li><a href="#">BORROW</a></li> 
+                 <li><a href="addcar.html">ADD CAR</a></li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+
+                 <li><a href="javascript:openForm()" class="open-button"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+                <div class="form-popup" id="myForm">
+                  <form action="https://www.w3schools.com/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a>forgetPassword</a>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span class="badge">5</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container-fluid text-center">
+         <div class="row content " >
+            <div class="col-sm-8" style="background-color:light-gray; height: 100%;">
+                <div class="container-fluid">
+                  <div class="jumbotron" style="background-color:white">
+                    <h1>Your Cart</h1>
+                    <p> it is empty</p>
+                  </div>
+</div>
+            </div>
+            <div class="col-sm-4" style="background-color: lavender; height: 100%; text-align: left;">
+                <h1>Cart Summery</h1>
+                <ul>
+                    <li><h4 style="display: inline;" >subtotal</h4><span class="cartspan">$40.00</span></li>
+                    <li> <h4 style="display: inline;">sales tax</h4><span class="cartspan">$1.90</span></li>
+                        <hr>
+                    <li><h3 style="display: inline;" >total</h3><span class="cartspan">$41.90</span></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+
+      <footer  class="footer bg-1" >
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-3 col-md-6 footer-info">
+               <div class="vl"></div>
+               <h3>Nati cars</h3>
+               <p>we are the trusted car sell company in the world you can trust us with in  your hart</p>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful links</h4>
+               <ul class="footer-links-ul">
+                 <p class="hl-h"></p>
+                 <li><a href="#">HOME</a></li>
+                 <p class="hl"></p>
+                <li><a href="#">Prodacts</a></li>
+                <p class="hl"></p>
+                 <li><a href="#">Aboutus</a></li>
+                 <p class="hl"></p>
+                  <li><a href="#">Enquiry</a></li>
+                  <p class="hl"></p>
+                 <li><a href="#">Contact us</a></li>
+                 <p class="hl"></p>
+               </ul>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-Contact">
+               <h4>Follow us</h4>
+               <p class="hl-h"></p>
+               <a href="#" class="facebook"><i class="fa fa-facebook">twiter</i></a>
+               <a href="#" class="instagram"><i class="fa fa-instagram">instagram</i></a>
+               <a href="#" class="google-plus"><i class="fa fa-google-plus">gooogleplus</i></a>
+               <a href="#" class="linkedin"><i class="fa linkedin"></i>linkin</a>
+             </div>
+             <div class="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Our Newsletter</h4>
+               <p class="hl-h"></p>
+               <h4>Subscribe to our newsletter</h4>
+               <form class="form-inline">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+          <p class="copyright text-muted" >
+            Copyright &copy;naticars.com 2019
+          </p>
+    </footer>
+<script type="text/javascript" src="../js/script.js"></script>    
+</body>
+</html>
+
+
+
